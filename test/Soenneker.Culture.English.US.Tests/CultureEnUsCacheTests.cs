@@ -1,22 +1,12 @@
-using Soenneker.Culture.English.US.Abstract;
-using Soenneker.Tests.FixturedUnit;
+using Soenneker.Tests.Unit;
 using Xunit;
 
 namespace Soenneker.Culture.English.US.Tests;
 
-[Collection("Collection")]
-public class CultureEnUsCacheTests : FixturedUnitTest
+public class CultureEnUsCacheTests : UnitTest
 {
-    private readonly ICultureEnUsCache _util;
-
-    public CultureEnUsCacheTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
-    {
-        _util = Resolve<ICultureEnUsCache>(true);
-    }
-
     [Fact]
     public void Default()
     {
-
     }
 }
