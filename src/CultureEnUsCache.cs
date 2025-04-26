@@ -1,4 +1,3 @@
-using System;
 using System.Globalization;
 
 namespace Soenneker.Culture.English.US;
@@ -8,7 +7,8 @@ namespace Soenneker.Culture.English.US;
 /// </summary>
 public static class CultureEnUsCache
 {
-    private static readonly Lazy<CultureInfo> _cultureInfoLazy = new(() => CultureInfo.GetCultureInfo("en-US"));
-
-    public static CultureInfo CultureInfo = _cultureInfoLazy.Value;
+    /// <summary>
+    /// The cached <see cref="CultureInfo"/> instance for "en-US" (English - United States).
+    /// </summary>
+    public static readonly CultureInfo CultureInfo = CultureInfo.GetCultureInfo("en-US");
 }
