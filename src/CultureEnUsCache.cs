@@ -10,5 +10,5 @@ public static class CultureEnUsCache
     /// <summary>
     /// The cached <see cref="CultureInfo"/> instance for "en-US" (English - United States).
     /// </summary>
-    public static readonly CultureInfo CultureInfo = CultureInfo.GetCultureInfo("en-US");
+    public static readonly CultureInfo Instance = CultureInfo.GetCultureInfo("en-US");
 }
