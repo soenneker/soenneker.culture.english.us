@@ -1,4 +1,4 @@
-# Contributing to Soenneker.Culture.English.US
+﻿# Contributing to Soenneker.Culture.English.US
 
 We're excited that you're interested in contributing!
 
