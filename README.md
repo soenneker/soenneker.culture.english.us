@@ -3,11 +3,26 @@
 [![](https://img.shields.io/nuget/dt/soenneker.culture.english.us.svg?style=for-the-badge)](https://www.nuget.org/packages/soenneker.culture.english.us/)
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.culture.english.us/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.culture.english.us/actions/workflows/codeql.yml)
 
-# ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Culture.English.US
-### A cache of CultureInfo.GetCultureInfo for en-US.
+# Soenneker.Culture.English.US
 
-## Installation
+A cache of CultureInfo.GetCultureInfo for en-US.
 
-```
+## Install
+
+```bash
 dotnet add package Soenneker.Culture.English.US
 ```
+
+## What you get
+
+- `CultureEnUsCache` — A cache of CultureInfo.GetCultureInfo for en-US.
+
+## API at a glance
+
+| API | What it does | Result / important behavior |
+| --- | --- | --- |
+| `CultureEnUsCache.Instance` | The cached `CultureInfo` instance for "en-US" (English - United States). | The cached `CultureInfo` instance for "en-US" (English - United States). |
+
+## Practical notes
+
+- Calls that return a cached or singleton value reuse the same instance until the owning service is disposed.
